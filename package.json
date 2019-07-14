@@ -1,0 +1,40 @@
+{
+  "name": "coffeywebdev2019",
+  "version": "1.0.0",
+  "description": "Vue/Nuxt blog and portflio site.",
+  "author": "Anthony Coffey",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^0.1.2",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.1.0",
+    "bourbon": "^6.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "frontmatter-markdown-loader": "^1.7.0",
+    "highlight.js": "^9.15.8",
+    "jest": "^24.1.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.4",
+    "responsive-loader": "^1.2.0",
+    "sass-loader": "^7.1.0",
+    "sharp": "^0.22.1",
+    "sierra-library": "^3.5.0",
+    "url-loader": "^2.0.1",
+    "vue-jest": "^3.0.3"
+  }
+}
