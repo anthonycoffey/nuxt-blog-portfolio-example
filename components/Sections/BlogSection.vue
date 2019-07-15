@@ -6,12 +6,15 @@
         <span class="emoji-title emoji--writing"/>
       </div>
     </div>
-    <ul class="blogs">
-      <blog-card
-        v-for="blog in blogs"
-        :key="blog.name"
-        :blog="blog" />
-    </ul>
+    <NesListWrapper>
+      <ul class="blogs">
+        <blog-card
+          v-for="blog in blogs"
+          :key="blog.name"
+          :blog="blog" />
+      </ul>
+    </NesListWrapper>
+
   </section>
 </template>
 <script>

@@ -35,6 +35,7 @@
     "sharp": "^0.22.1",
     "sierra-library": "^3.5.0",
     "url-loader": "^2.0.1",
-    "vue-jest": "^3.0.3"
+    "vue-jest": "^3.0.3",
+    "vuenes.css": "^2.1.0"
   }
 }
