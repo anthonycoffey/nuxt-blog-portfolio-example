@@ -16,8 +16,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Serif&display=swap'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap'}
     ]
   },
   /*
@@ -28,7 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
-    // 'sierra-library/lib/index.scss'
+
   ],
   /*
   ** Plugins to load before mounting the App

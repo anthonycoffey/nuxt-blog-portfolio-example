@@ -13,6 +13,7 @@ body {
 a {
   color: $c-link;
   text-decoration: none;
+
   &:hover {
     color: $c-link-hover;
   }
@@ -106,7 +107,7 @@ h1,
 h2,
 h3,
 h4 {
-
+  font-family: $c-font-primary;
   font-weight: $fw-headings;
 }
 

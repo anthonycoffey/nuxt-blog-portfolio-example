@@ -2,8 +2,8 @@
  *  SETTINGS
  */
 
-$c-serif: 'Noto Serif', serif !default;
-$c-sanserif: 'Open Sans', sans-serif !default;
+$c-font-primary: 'Press Start 2P', sans-serif !default;
+$c-font-secondary: 'Open Sans', sans-serif !default;
 
 $enable-grid-classes: true !default; // generate grid classes
 $enable-reset-defaults: true !default; // reset default browser values
@@ -18,10 +18,10 @@ $c-error: #e74c3c !default;
 $c-gray: #969da6 !default;
 $c-gray-light: #eceff1 !default;
 
-$c-primary: #262626 !default;
-$c-secondary: #595959 !default;
-$c-dark: #0d0d0d !default;
-$c-light: #f2f2f2 !default;
+$c-primary: #343434 !default;
+$c-secondary: #3de930 !default;
+$c-dark: #212121 !default;
+$c-light: $c-gray-light !default;
 
 $c-text: #272727 !default;
 $c-link: $c-primary !default;
@@ -66,13 +66,12 @@ $bxsh-medium:  $bxsh-base !default;
 $fw-light: 300 !default;
 $fw-normal: 400 !default;
 $fw-bold: 700 !default;
-//$fw-headings: $fw-light !default;
-$fw-headings: $fw-bold !default;
+$fw-headings: $fw-light !default;
 
-$ff-base: $c-sanserif;
+$ff-base: $c-font-secondary !default;
 $fw-base: 400 !default;
 $fz-base: 18px !default;
-$lh-base: 1.5em !default;
+$lh-base: 1.15 !default;
 
 $fz-huge: 36px !default;
 $fz-big: 24px !default;
@@ -86,7 +85,7 @@ $lh-small: 1.3em !default;
 
 // Body
 $c-body: $c-text !default;
-$ff-body: $ff-base !default;
+$ff-body: $ff-base !default; // set body font
 $fz-body: $fz-base !default;
 $fw-body: $fw-base !default;
 $lh-body: $lh-base !default;
@@ -100,8 +99,8 @@ $bdr-rounded-corners: 5px !default;
 
 // Defaults (HTML elements)
 $fw-strong: $fw-bold !default;
-$mb-p: 1.5em !default;
-$mb-ul: 1em !default;
+$mb-p: 2em !default;
+$mb-ul: 0 !default;
 $mb-li: .5em !default;
 
 // Margin
@@ -187,79 +186,79 @@ $p-button-big: $p-big $p-huge !default;
 
 $fz-button-small: $fz-small !default;
 $p-button-small: $p-small $p-big !default;
-
-// Forms
-$bgc-form: $c-light !default;
-$c-form: $c-text !default;
-$bdr-form: $bdr-medium !default;
-$bd-form: $bd-medium !default;
-$fz-form: $fz-body !default;
-$bgc-form-focus: lighten($bgc-form, 5%) !default;
-$trs-form: background-color .2s ease-in-out !default;
-$c-form-placeholder: $c-gray !default;
-$mih-form-textarea: 120px !default;
-$p-form: $p-medium $p-big !default;
-$size-form-input-icon: 16px !default;
-$c-form-input-icon: $c-gray !default;
-$bd-form-error: 1px solid $c-error !default;
-$bgc-form-error: $bgc-form !default;
-
-// Loading bar
-$h-loading-bar: 6px !default;
-$w-loading-bar: 300px !default;
-$z-loading-bar: 1000 !default;
-
-// Loading spinner
-$bg-loading-spinner: $c-secondary !default;
-$size-loading-spinner-inner: 9px !default;
-$size-loading-spinner: 30px !default;
-$z-loading-spinner: 1000 !default;
-
-// Notification
-$bdr-notification: $bdr-medium !default;
-$c-notification: $c-white !default;
-$mb-notification: $m-big !default;
-$p-notification: $p-big !default;
-
-// Paginator
-$mr-paginator-item: $m-xsmall !default;
-$bdr-paginator-item: $bdr-medium !default;
-$bg-paginator-item: $c-light !default;
-$c-paginator-item: $c-text !default;
-$bg-paginator-item-active: $c-primary !default;
-$c-paginator-item-active: $c-white !default;
-$p-paginator-item: $p-medium $p-big !default;
-
-// Table
-$bgc-table-header: $bgc-body !default;
-$bgc-table: $c-light !default;
-$bd-table: $bd-medium !default;
-$c-table-heading: $c-gray !default;
-$c-table-text: $c-text !default;
-$fw-table-heading: normal !default;
-$mwi-table: 100% !default;
-$p-table-cell: $p-medium !default;
-$p-table-heading: $p-medium !default;
-$w-table: 100% !default;
-$fz-table-heading: $fz-small !default;
-
-// Tabs
-$bdb-tabs-item-selected: 3px solid $c-primary !default;
-$bdb-tabs-item: 3px solid transparent !default;
-$bdb-tabs: $bd-medium !default;
-$c-tabs-item-hover: $c-primary !default;
-$c-tabs-item-selected: $c-primary !default;
-$c-tabs-item: $c-gray !default;
-$m-tabs-item: 0 $m-medium 0 0 !default;
-$miw-tabs-item: 70px !default;
-$p-tabs-item: $p-big !default;
-
-// Tags
-$bg-tag-dot: $bgc-body !default;
-$bg-tag: $c-light !default;
-$bdr-tag: $bdr-medium 0 0 $bdr-medium !default;
-$c-tag: $c-text !default;
-$lh-tag: 16px !default;
-$m-tag: 0 $m-medium $m-medium 0 !default;
-$p-tag: $p-medium !default;
-$size-tag-dot: 5px !default;
+//
+//// Forms
+//$bgc-form: $c-light !default;
+//$c-form: $c-text !default;
+//$bdr-form: $bdr-medium !default;
+//$bd-form: $bd-medium !default;
+//$fz-form: $fz-body !default;
+//$bgc-form-focus: lighten($bgc-form, 5%) !default;
+//$trs-form: background-color .2s ease-in-out !default;
+//$c-form-placeholder: $c-gray !default;
+//$mih-form-textarea: 120px !default;
+//$p-form: $p-medium $p-big !default;
+//$size-form-input-icon: 16px !default;
+//$c-form-input-icon: $c-gray !default;
+//$bd-form-error: 1px solid $c-error !default;
+//$bgc-form-error: $bgc-form !default;
+//
+//// Loading bar
+//$h-loading-bar: 6px !default;
+//$w-loading-bar: 300px !default;
+//$z-loading-bar: 1000 !default;
+//
+//// Loading spinner
+//$bg-loading-spinner: $c-secondary !default;
+//$size-loading-spinner-inner: 9px !default;
+//$size-loading-spinner: 30px !default;
+//$z-loading-spinner: 1000 !default;
+//
+//// Notification
+//$bdr-notification: $bdr-medium !default;
+//$c-notification: $c-white !default;
+//$mb-notification: $m-big !default;
+//$p-notification: $p-big !default;
+//
+//// Paginator
+//$mr-paginator-item: $m-xsmall !default;
+//$bdr-paginator-item: $bdr-medium !default;
+//$bg-paginator-item: $c-light !default;
+//$c-paginator-item: $c-text !default;
+//$bg-paginator-item-active: $c-primary !default;
+//$c-paginator-item-active: $c-white !default;
+//$p-paginator-item: $p-medium $p-big !default;
+//
+//// Table
+//$bgc-table-header: $bgc-body !default;
+//$bgc-table: $c-light !default;
+//$bd-table: $bd-medium !default;
+//$c-table-heading: $c-gray !default;
+//$c-table-text: $c-text !default;
+//$fw-table-heading: normal !default;
+//$mwi-table: 100% !default;
+//$p-table-cell: $p-medium !default;
+//$p-table-heading: $p-medium !default;
+//$w-table: 100% !default;
+//$fz-table-heading: $fz-small !default;
+//
+//// Tabs
+//$bdb-tabs-item-selected: 3px solid $c-primary !default;
+//$bdb-tabs-item: 3px solid transparent !default;
+//$bdb-tabs: $bd-medium !default;
+//$c-tabs-item-hover: $c-primary !default;
+//$c-tabs-item-selected: $c-primary !default;
+//$c-tabs-item: $c-gray !default;
+//$m-tabs-item: 0 $m-medium 0 0 !default;
+//$miw-tabs-item: 70px !default;
+//$p-tabs-item: $p-big !default;
+//
+//// Tags
+//$bg-tag-dot: $bgc-body !default;
+//$bg-tag: $c-light !default;
+//$bdr-tag: $bdr-medium 0 0 $bdr-medium !default;
+//$c-tag: $c-text !default;
+//$lh-tag: 16px !default;
+//$m-tag: 0 $m-medium $m-medium 0 !default;
+//$p-tag: $p-medium !default;
+//$size-tag-dot: 5px !default;

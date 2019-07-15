@@ -1,15 +1,11 @@
 <template>
   <div>
-
     <header-menu/>
-
     <div class="container-medium">
       <div class="row">
         <nuxt/>
       </div>
     </div>
-
-
   </div>
 </template>
 <script>
@@ -23,23 +19,7 @@
   }
 </script>
 <style lang="scss">
-  h1 {
-    font-size: modular-scale(3);
-    line-height: 1.25;
-    /*@include media-breakpoint-down(md){
-      font-size: modular-scale(2);
-    }*/
+  .date {
+    font-family: $c-font-primary;
   }
-
-  h2 {
-
-  }
-
-
-
-  p {
-    font-family: $c-serif;
-    letter-spacing: 0.03rem;
-  }
-
 </style>

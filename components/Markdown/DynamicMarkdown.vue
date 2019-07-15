@@ -3,11 +3,12 @@
   import hljs from 'highlight.js/lib/highlight'
   import javascript from 'highlight.js/lib/languages/javascript'
   import css from 'highlight.js/lib/languages/css'
-  import xml from 'highlight.js/lib/languages/xml'
+  import php from 'highlight.js/lib/languages/php'
   hljs.registerLanguage('javascript', javascript)
   hljs.registerLanguage('css', css)
-  hljs.registerLanguage('xml', xml)
-  import 'highlight.js/styles/a11y-light.css'
+  hljs.registerLanguage('php', php)
+
+  import 'highlight.js/styles/darcula.css'
 
   export default {
     props: ["renderFunc", "staticRenderFuncs", "extraComponent"],

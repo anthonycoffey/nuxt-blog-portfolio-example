@@ -1,5 +1,5 @@
 <template>
-  <div class="page-index">
+  <div class="index">
     <div class="container">
       <BlogSection :blogs="blogs"/>
     </div>

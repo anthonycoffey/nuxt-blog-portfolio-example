@@ -23,13 +23,11 @@ $result = preg_replace($re, $subst, $str);
 
 The above example would result in the following:
 
-```
- before:
- /assets/images/image.jpg
 
- after:
- /my-path/assets/images/image.jpg
-```
+- *before:* /assets/images/image.jpg
+
+- *after:* /my-path/assets/images/image.jpg
+
 
 I actually even went a bit further with it by adding a callback function that can check to see if the matched pattern has a trailing slash or not. Maybe I'll share that in my next post or add it to this one later on.
 

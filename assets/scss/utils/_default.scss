@@ -30,10 +30,16 @@ strong {
 }
 
 ul {
+  list-style: disc;
+  padding-left: 35px;
+  margin-bottom: $mb-ul;
+}
+
+ol {
+  padding-left: 35px;
   margin-bottom: $mb-ul;
 }
 
 li {
-  list-style: none;
   margin-bottom: $mb-li;
 }
